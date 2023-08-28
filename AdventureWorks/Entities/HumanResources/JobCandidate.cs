@@ -9,6 +9,7 @@ namespace AdventureWorks.Entities.HumanResources
     [Table("HumanResources.JobCandidate")]
     public partial class JobCandidate
     {
+#nullable disable
         public int JobCandidateID { get; set; }
 
         public int? BusinessEntityID { get; set; }
@@ -19,5 +20,6 @@ namespace AdventureWorks.Entities.HumanResources
         public DateTime ModifiedDate { get; set; }
 
         public virtual Employee Employee { get; set; }
+#nullable restore
     }
 }

@@ -14,7 +14,7 @@ namespace AdventureWorks.Entities.People
         {
             BusinessEntityAddresses = new HashSet<BusinessEntityAddress>();
         }
-
+#nullable disable
         public int AddressTypeID { get; set; }
 
         [Required]
@@ -27,5 +27,6 @@ namespace AdventureWorks.Entities.People
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BusinessEntityAddress> BusinessEntityAddresses { get; set; }
+#nullable restore
     }
 }

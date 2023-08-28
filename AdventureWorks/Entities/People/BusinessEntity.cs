@@ -16,7 +16,7 @@ namespace AdventureWorks.Entities.People
             BusinessEntityAddresses = new HashSet<BusinessEntityAddress>();
             BusinessEntityContacts = new HashSet<BusinessEntityContact>();
         }
-
+#nullable disable
         public int BusinessEntityID { get; set; }
 
         public Guid rowguid { get; set; }
@@ -34,5 +34,6 @@ namespace AdventureWorks.Entities.People
         public virtual Store Store { get; set; }
 
         public virtual Vendor Vendor { get; set; }
+#nullable restore
     }
 }

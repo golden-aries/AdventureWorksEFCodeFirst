@@ -9,6 +9,7 @@ namespace AdventureWorks.Entities.People
     [Table("Person.PersonPhone")]
     public partial class PersonPhone
     {
+#nullable disable
         [Key]
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -29,5 +30,6 @@ namespace AdventureWorks.Entities.People
         public virtual Person Person { get; set; }
 
         public virtual PhoneNumberType PhoneNumberType { get; set; }
+#nullable restore
     }
 }

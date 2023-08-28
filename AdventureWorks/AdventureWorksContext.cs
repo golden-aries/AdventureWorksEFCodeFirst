@@ -9,14 +9,53 @@ namespace AdventureWorks
     using AdventureWorks.Entities.Production;
     using AdventureWorks.Entities.Purchasing;
     using AdventureWorks.Entities.Sales;
+    using System.Data.Entity.Infrastructure;
+    using System.Data.Common;
+    using System.Data.Entity.Core.Objects;
 
     public partial class AdventureWorksContext : DbContext
     {
         public AdventureWorksContext()
-            : base("name=AdventureWorksContext")
+           : base()
         {
+            Database.SetInitializer<AdventureWorksContext>(null);
         }
 
+        public AdventureWorksContext(string nameOrConnectionString)
+            : base(nameOrConnectionString)
+        {
+            Database.SetInitializer<AdventureWorksContext>(null);
+        }
+
+        public AdventureWorksContext(string nameOrConnectionString, DbCompiledModel model)
+            : base(nameOrConnectionString, model)
+        {
+            Database.SetInitializer<AdventureWorksContext>(null);
+        }
+        public AdventureWorksContext(DbConnection existingConnection, bool contextOwnsConnection)
+            : base(existingConnection, contextOwnsConnection)
+        {
+            Database.SetInitializer<AdventureWorksContext>(null);
+        }
+
+        public AdventureWorksContext(ObjectContext objectContext, bool dbContextOwnsObjectContext)
+            : base(objectContext, dbContextOwnsObjectContext)
+        {
+            Database.SetInitializer<AdventureWorksContext>(null);
+        }
+
+        public AdventureWorksContext(DbConnection existingConnection, DbCompiledModel model, bool contextOwnsConnection)
+            : base(existingConnection, model, contextOwnsConnection)
+        {
+            Database.SetInitializer<AdventureWorksContext>(null);
+        }
+
+        public AdventureWorksContext(DbCompiledModel model)
+            : base(model)
+        {
+            Database.SetInitializer<AdventureWorksContext>(null);
+        }
+#nullable disable
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<EmployeeDepartmentHistory> EmployeeDepartmentHistories { get; set; }
@@ -84,7 +123,7 @@ namespace AdventureWorks
         public virtual DbSet<SpecialOfferProduct> SpecialOfferProducts { get; set; }
         public virtual DbSet<Store> Stores { get; set; }
         public virtual DbSet<ProductDocument> ProductDocuments { get; set; }
-
+#nullable restore
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             #region HUMAN RESOURCES
@@ -142,7 +181,7 @@ namespace AdventureWorks
 
             modelBuilder.Entity<BusinessEntity>()
                 .Property(o => o.rowguid)
-                .HasColumnType("[uniqueidentifier] ROWGUIDCOL")
+                //.HasColumnType("[uniqueidentifier]")
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Computed);
 
             modelBuilder.Entity<BusinessEntity>()

@@ -9,6 +9,7 @@ namespace AdventureWorks.Entities.HumanResources
     [Table("HumanResources.EmployeePayHistory")]
     public partial class EmployeePayHistory
     {
+#nullable disable
         [Key]
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -26,5 +27,6 @@ namespace AdventureWorks.Entities.HumanResources
         public DateTime ModifiedDate { get; set; }
 
         public virtual Employee Employee { get; set; }
+#nullable restore
     }
 }

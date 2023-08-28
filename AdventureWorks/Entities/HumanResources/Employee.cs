@@ -20,7 +20,7 @@ namespace AdventureWorks.Entities.HumanResources
             JobCandidates = new HashSet<JobCandidate>();
             PurchaseOrderHeaders = new HashSet<PurchaseOrderHeader>();
         }
-
+#nullable disable
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int BusinessEntityID { get; set; }
@@ -81,5 +81,6 @@ namespace AdventureWorks.Entities.HumanResources
         public virtual ICollection<PurchaseOrderHeader> PurchaseOrderHeaders { get; set; }
 
         public virtual SalesPerson SalesPerson { get; set; }
+#nullable restore
     }
 }

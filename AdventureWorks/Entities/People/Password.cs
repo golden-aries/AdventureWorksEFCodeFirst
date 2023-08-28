@@ -9,6 +9,7 @@ namespace AdventureWorks.Entities.People
     [Table("Person.Password")]
     public partial class Password
     {
+#nullable disable
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int BusinessEntityID { get; set; }
@@ -26,5 +27,6 @@ namespace AdventureWorks.Entities.People
         public DateTime ModifiedDate { get; set; }
 
         public virtual Person Person { get; set; }
+#nullable restore
     }
 }

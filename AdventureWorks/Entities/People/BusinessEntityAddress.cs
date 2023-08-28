@@ -9,6 +9,7 @@ namespace AdventureWorks.Entities.People
     [Table("Person.BusinessEntityAddress")]
     public partial class BusinessEntityAddress
     {
+#nullable disable
         [Key]
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -33,5 +34,6 @@ namespace AdventureWorks.Entities.People
         public virtual AddressType AddressType { get; set; }
 
         public virtual BusinessEntity BusinessEntity { get; set; }
+#nullable restore
     }
 }

@@ -19,7 +19,7 @@ namespace AdventureWorks.Entities.People
             PersonCreditCards = new HashSet<PersonCreditCard>();
             PersonPhones = new HashSet<PersonPhone>();
         }
-
+#nullable disable
         public int BusinessEntityID { get; set; }
 
         public string PersonType { get; set; }
@@ -66,5 +66,6 @@ namespace AdventureWorks.Entities.People
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PersonPhone> PersonPhones { get; set; }
+#nullable restore
     }
 }

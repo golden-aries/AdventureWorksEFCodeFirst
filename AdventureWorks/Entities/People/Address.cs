@@ -17,7 +17,7 @@ namespace AdventureWorks.Entities.People
             SalesOrderHeaders = new HashSet<SalesOrderHeader>();
             SalesOrderHeaders1 = new HashSet<SalesOrderHeader>();
         }
-
+#nullable disable
         public int AddressID { get; set; }
 
         [Required]
@@ -53,5 +53,6 @@ namespace AdventureWorks.Entities.People
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SalesOrderHeader> SalesOrderHeaders1 { get; set; }
+#nullable restore
     }
 }

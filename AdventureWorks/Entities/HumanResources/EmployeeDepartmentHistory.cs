@@ -9,6 +9,7 @@ namespace AdventureWorks.Entities.HumanResources
     [Table("HumanResources.EmployeeDepartmentHistory")]
     public partial class EmployeeDepartmentHistory
     {
+#nullable disable
         [Key]
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -37,5 +38,6 @@ namespace AdventureWorks.Entities.HumanResources
         public virtual Employee Employee { get; set; }
 
         public virtual Shift Shift { get; set; }
+#nullable restore
     }
 }

@@ -9,6 +9,7 @@ namespace AdventureWorks.Entities.People
     [Table("Person.EmailAddress")]
     public partial class EmailAddress
     {
+#nullable disable
         [Key]
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -27,5 +28,6 @@ namespace AdventureWorks.Entities.People
         public DateTime ModifiedDate { get; set; }
 
         public virtual Person Person { get; set; }
+#nullable restore
     }
 }

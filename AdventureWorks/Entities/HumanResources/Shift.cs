@@ -14,7 +14,7 @@ namespace AdventureWorks.Entities.HumanResources
         {
             EmployeeDepartmentHistories = new HashSet<EmployeeDepartmentHistory>();
         }
-
+#nullable disable
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public byte ShiftID { get; set; }
 
@@ -30,5 +30,6 @@ namespace AdventureWorks.Entities.HumanResources
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EmployeeDepartmentHistory> EmployeeDepartmentHistories { get; set; }
+#nullable restore
     }
 }

@@ -17,7 +17,7 @@ namespace AdventureWorks.Entities.People
             SalesTerritories = new HashSet<SalesTerritory>();
             StateProvinces = new HashSet<StateProvince>();
         }
-
+#nullable disable
         [Key]
         [StringLength(3)]
         public string CountryRegionCode { get; set; }
@@ -36,5 +36,6 @@ namespace AdventureWorks.Entities.People
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<StateProvince> StateProvinces { get; set; }
+#nullable restore
     }
 }
