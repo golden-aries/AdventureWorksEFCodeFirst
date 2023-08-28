@@ -12,6 +12,8 @@ var result = await db.People.Take(10).ToListAsync();
 
 #region data test
 /*
+ SELECT count(*) from Person.BusinessEntity
+ -- result 20777
  It looks like business entity is either of three: Person, Vendor or Store
  SELECT 
 	be.BusinessEntityID,
