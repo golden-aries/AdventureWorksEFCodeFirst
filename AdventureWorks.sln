@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Try00", "Try00\Try00.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Try01_GroupJoinToSql", "Try01_GroupJoinToSql\Try01_GroupJoinToSql.csproj", "{D99730EF-3BFE-4499-8639-3E0DF119612D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Try02_GroupJoinSelectMany", "Try02_GroupJoinSelectMany\Try02_GroupJoinSelectMany.csproj", "{B98D4745-F01D-4C3B-B677-429B5E5502DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Try03_GroupJoinSelectManyFilter", "Try03_GroupJoinSelectManyFilter\Try03_GroupJoinSelectManyFilter.csproj", "{40D4CB28-0EEE-4CBE-9AE1-04D6F922D07B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{D99730EF-3BFE-4499-8639-3E0DF119612D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D99730EF-3BFE-4499-8639-3E0DF119612D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D99730EF-3BFE-4499-8639-3E0DF119612D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B98D4745-F01D-4C3B-B677-429B5E5502DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98D4745-F01D-4C3B-B677-429B5E5502DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B98D4745-F01D-4C3B-B677-429B5E5502DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B98D4745-F01D-4C3B-B677-429B5E5502DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D4CB28-0EEE-4CBE-9AE1-04D6F922D07B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D4CB28-0EEE-4CBE-9AE1-04D6F922D07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D4CB28-0EEE-4CBE-9AE1-04D6F922D07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D4CB28-0EEE-4CBE-9AE1-04D6F922D07B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
