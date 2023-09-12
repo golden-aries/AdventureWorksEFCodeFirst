@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Try02_GroupJoinSelectMany",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Try03_GroupJoinSelectManyFilter", "Try03_GroupJoinSelectManyFilter\Try03_GroupJoinSelectManyFilter.csproj", "{40D4CB28-0EEE-4CBE-9AE1-04D6F922D07B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Try04_GroupJoinSelectManyDistinct", "Try04_GroupJoinSelectManyDistinct\Try04_GroupJoinSelectManyDistinct.csproj", "{28B6DDBC-A7FC-4DA6-9E19-2666E855CC11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{40D4CB28-0EEE-4CBE-9AE1-04D6F922D07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40D4CB28-0EEE-4CBE-9AE1-04D6F922D07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40D4CB28-0EEE-4CBE-9AE1-04D6F922D07B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28B6DDBC-A7FC-4DA6-9E19-2666E855CC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28B6DDBC-A7FC-4DA6-9E19-2666E855CC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28B6DDBC-A7FC-4DA6-9E19-2666E855CC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28B6DDBC-A7FC-4DA6-9E19-2666E855CC11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
